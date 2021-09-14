@@ -1,21 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import Chessboard from 'chessboardjsx';
-// import MoveValid from "./Integrations/MoveValid";
+import React, { Component } from "react";
 
-function App() {
+import MoveValidation from "./integrations/MoveValidation";
 
-
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          <Chessboard position="start"/>
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <div style={boardsContainer}>
+          <MoveValidation />
         </div>
-      </header>
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default App;
+
+const boardsContainer = {
+  display: "flex",
+  justifyContent: "space-around",
+  alignItems: "center",
+  flexWrap: "wrap",
+  width: "100vw",
+  marginTop: 30,
+  marginBottom: 50
+};

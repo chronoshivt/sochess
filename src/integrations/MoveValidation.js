@@ -167,7 +167,7 @@ export default function MoveValidation() {
           }) => (
             <Chessboard
               id="humanVsHuman"
-              width={320}
+              width={600}
               position={position}
               onDrop={onDrop}
               onMouseOverSquare={onMouseOverSquare}

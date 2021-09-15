@@ -3,11 +3,26 @@ h1 {
   color:white;
 }
 
-.pl {
-  color: white;
+.top {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 100vw;
-};
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.ui {
+  background-color: white;
+  width: 600px;
+}
+
+.pl {
+  color: red;
+}
+
+
+.uicontainer {
+  display: flex;
+  justify-content: center;
+}

@@ -10,7 +10,12 @@ class App extends Component {
         <div style={boardsContainer}>
           <MoveValidation />
         </div>
-        <div className ="pl">PLAY</div>
+        <div className="uicontainer">
+          <div className="ui">
+            <div className ="pl">PLAY</div>
+            <div>LINK WALLET</div>
+          </div>
+        </div>
       </div>
     );
   }

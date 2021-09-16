@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 import './App.css'
 import MoveValidation from "./integrations/MoveValidation";
+import PhantomHandler from "./integrations/PhantomHandler";
 import ReactDOM from 'react-dom';
 import Button from '@material-ui/core/Button';
 // import PopUp from "./Components/PopUp";
@@ -9,14 +10,7 @@ import Button from '@material-ui/core/Button';
 
 class App extends Component {
 
-
-
-
-
   render() {
-
-
-
     return (
       <div>
         <h1 className="top">SolChess </h1>
@@ -26,18 +20,18 @@ class App extends Component {
         <div className="uicontainer">
           <div className="ui">
             <div className ="play">
-            <Button variant="outlined" color="primary" onClick="">
+              <Button variant="outlined" color="primary" onClick="">
                 PLAY
               </Button>
             </div>
-            <div className="link">LINK WALLET</div>
+            <PhantomHandler />
             <div className="time">
               <Button variant="outlined" color="secondary" onClick="">
                 TIME
               </Button>
             </div>
             <div className="wager">
-            <Button variant="outlined" color="primary" onClick="">
+              <Button variant="outlined" color="primary" onClick="">
                 WAGER
               </Button>
             </div>

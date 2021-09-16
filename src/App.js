@@ -12,8 +12,10 @@ class App extends Component {
         </div>
         <div className="uicontainer">
           <div className="ui">
-            <div className ="pl">PLAY</div>
-            <div>LINK WALLET</div>
+            <div className ="play">PLAY</div>
+            <div className="link">LINK WALLET</div>
+            <div className="time">TIME</div>
+            <div className="wager">WAGER</div>
           </div>
         </div>
       </div>

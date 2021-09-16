@@ -15,12 +15,33 @@ h1 {
 .ui {
   background-color: white;
   width: 600px;
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 }
 
-.pl {
+.play {
+  text-align: center;
   color: red;
+  grid-area: 4 / 2 / 5 / 3;
 }
 
+.link {
+  text-align: center;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.time {
+  text-align: center;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.wager {
+  text-align: center;
+  grid-area: 3 / 3 / 4 / 4;
+}
 
 .uicontainer {
   display: flex;

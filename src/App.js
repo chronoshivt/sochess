@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import './App.css'
 import MoveValidation from "./integrations/MoveValidation";
+import ReactDOM from 'react-dom';
+import Button from '@material-ui/core/Button';
+
+
 
 class App extends Component {
   render() {
@@ -12,10 +16,22 @@ class App extends Component {
         </div>
         <div className="uicontainer">
           <div className="ui">
-            <div className ="play">PLAY</div>
+            <div className ="play">
+            <Button variant="outlined" color="primary" onClick="">
+                PLAY
+              </Button>
+            </div>
             <div className="link">LINK WALLET</div>
-            <div className="time">TIME</div>
-            <div className="wager">WAGER</div>
+            <div className="time">
+              <Button variant="outlined" color="secondary" onClick="">
+                TIME
+              </Button>
+            </div>
+            <div className="wager">
+            <Button variant="outlined" color="primary" onClick="">
+                WAGER
+              </Button>
+            </div>
           </div>
         </div>
       </div>

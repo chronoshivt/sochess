@@ -1,13 +1,22 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import './App.css'
 import MoveValidation from "./integrations/MoveValidation";
 import ReactDOM from 'react-dom';
 import Button from '@material-ui/core/Button';
+// import PopUp from "./Components/PopUp";
 
 
 
 class App extends Component {
+
+
+
+
+
   render() {
+
+
+
     return (
       <div>
         <h1 className="top">SolChess </h1>

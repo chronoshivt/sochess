@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import Popover from '@material-ui/core/Popover';
+// import Popover from '@material-ui/core/Popover';
 import Button from '@material-ui/core/Button';
-import { useState } from 'react';
 
 export default class TimePick extends Component {
     constructor(props) {
@@ -36,6 +35,7 @@ export default class TimePick extends Component {
         const match = this.state.timeMatch;
         if (!match) {
             console.log("10 MINUTES")
+            // SEND TO SERVER FOR MATCH MAKING
             this.setState({
                 isTimeSelected: true,
                 timeMatch: 10,
@@ -62,7 +62,7 @@ render() {
     let chosenTime
     if (!isTimeSelected) {
         chosenTime = (
-            <div className="time">
+            <div>
                 <Button onClick={this.changeTime5}>5 MINS</Button>
                 <br />
                 <Button onClick={this.changeTime10}>10 MINS</Button>
@@ -72,9 +72,9 @@ render() {
         )
     } else {
         chosenTime = (
-            <div className="time">
+            <div>
             <Button variant="outlined" color="primary" onClick={this.clearTime}>
-                5
+                CHANGE TIME
             </Button>
             </div>
         )

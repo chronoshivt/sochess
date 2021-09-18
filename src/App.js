@@ -5,8 +5,9 @@ import PhantomHandler from "./integrations/PhantomHandler";
 import ReactDOM from 'react-dom';
 import Button from '@material-ui/core/Button';
 // import PopUp from "./Components/PopUp";
-
-
+import BPopover from "./Components/BPopover.js"
+import TimePick from './Components/TimePick.js'
+import WagerPick from './Components/WagerPick.js'
 
 class App extends Component {
 
@@ -26,14 +27,10 @@ class App extends Component {
             </div>
             <PhantomHandler />
             <div className="time">
-              <Button variant="outlined" color="secondary" onClick="">
-                TIME
-              </Button>
+            <TimePick />
             </div>
             <div className="wager">
-              <Button variant="outlined" color="primary" onClick="">
-                WAGER
-              </Button>
+              <WagerPick />
             </div>
           </div>
         </div>
